@@ -18,7 +18,7 @@ export const DEFAULT_AMOUNT_STYLES = { letterSpacing: 0, fontWeight: 'bold', col
  * internationalization support.
  */
 const FormattedMoneyAmount = ({
-  formatWithCommas,
+  formatWithSeparators,
   abbreviateInterval,
   currency,
   precision,
@@ -37,7 +37,7 @@ const FormattedMoneyAmount = ({
         value={amount}
         currency={currency}
         precision={precision}
-        formatWithCommas={formatWithCommas}
+        formatWithSeparators={formatWithSeparators}
         {...amountStyles}
       />
     );
